@@ -1,4 +1,4 @@
-//➤➤➤➤➤➤➤MD➤JUNE➤MD➤➤➤➤➤➤//
+//➤➤➤➤➤➤➤MD➤Joe➤MD➤➤➤➤➤➤//
 
 
 require('./settings')
@@ -72,10 +72,10 @@ const store = {
     }
 }
 
-let phoneNumber = "254792021944"
+let phoneNumber = "254114305147"
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'))
 
-global.botname = "𝐉ᴜɴᴇ 𝐌ᴅ"
+global.botname = "Joe 𝐌ᴅ"
 global.themeemoji = "•"
 
 const settings = require('./settings')
@@ -147,7 +147,7 @@ async function startXeonBotInc() {
                             isForwarded: false,
                             forwardedNewsletterMessageInfo: {
                                 newsletterJid: '@newsletter',
-                                newsletterName: '𝐉ᴜɴᴇ 𝐌ᴅ',
+                                newsletterName: '𝐉oe 𝐌ᴅ',
                                 serverMessageId: -1
                             }
                         }
@@ -214,7 +214,7 @@ async function startXeonBotInc() {
         // Validate the phone number using awesome-phonenumber
         const pn = require('awesome-phonenumber');
         if (!pn('+' + phoneNumber).isValid()) {
-            console.log(chalk.red('Invalid phone number. Please enter your full international number (e.g., 255792021944 for Tanzania, 254798570132 for Kenya, etc.) without + or spaces.'));
+            console.log(chalk.red('Invalid phone number. Please enter your full international number (e.g., 255792021944 for Tanzania, 254114305147 for Kenya, etc.) without + or spaces.'));
             process.exit(1);
         }
 
@@ -243,7 +243,7 @@ async function startXeonBotInc() {
                 text: 
                 `
 ┏❐═⭔ *CONNECTED* ⭔═❐
-┃⭔ *Bot:* JUNE MD
+┃⭔ *Bot:* Joe MD
 ┃⭔ *Time:* ${new Date().toLocaleString()}
 ┃⭔ *Status:* Online
 ┃⭔ *User:* ${botNumber}
@@ -253,7 +253,7 @@ async function startXeonBotInc() {
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '@newsletter',
-                        newsletterName: '𝐉ᴜɴᴇ 𝐌ᴅ',
+                        newsletterName: 'Joe 𝐌ᴅ',
                         serverMessageId: -1
                     }
                 }
